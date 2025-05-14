@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <nav class="bg-white shadow p-4 fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex justify-between">
+      <a href="index.html" class="font-bold text-xl">Vivek Jariwala</a>
+      <div class="space-x-4">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html" class="text-blue-600">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <section class="pt-24 pb-16 max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl font-bold mb-6 text-center">What Clients Say</h1>
+    <blockquote class="p-6 bg-gray-100 rounded-xl mb-6">
+      <p>"Vivek transformed our reporting in under 2 weeks. We now finally understand our ROI."</p>
+      <footer class="text-sm text-gray-500 mt-2">— CMO, US HealthTech Startup</footer>
+    </blockquote>
+    <form class="bg-white border p-4 rounded-xl shadow" id="testimonialForm">
+      <h2 class="text-xl font-semibold mb-2">Leave a Testimonial</h2>
+      <input type="text" placeholder="Your Name" class="w-full border px-3 py-2 mb-2 rounded" required>
+      <textarea placeholder="Your Feedback" class="w-full border px-3 py-2 mb-2 rounded" required></textarea>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
