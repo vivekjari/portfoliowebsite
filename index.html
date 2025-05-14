@@ -2,52 +2,99 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Data Analyst | Healthcare Marketing</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-  <script defer src="scripts/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Data Analyst | Healthcare Marketing</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
   <nav class="fixed top-0 w-full bg-white shadow z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-xl font-bold">Vivek Jariwala</a>
-      <div class="space-x-6">
-        <a href="about.html" class="hover:text-blue-600">About</a>
-        <a href="services.html" class="hover:text-blue-600">Services</a>
-        <a href="projects.html" class="hover:text-blue-600">Projects</a>
-        <a href="testimonials.html" class="hover:text-blue-600">Testimonials</a>
-        <a href="contact.html" class="hover:text-blue-600">Contact</a>
-      </div>
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Vivek Jariwala</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#testimonials" class="hover:text-blue-600">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
     </div>
   </nav>
-  <section class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-white">
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-20 bg-gradient-to-r from-blue-50 to-white" data-aos="fade-up">
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Remote Data Analyst<br>for Healthcare Marketing</h1>
-      <p class="text-lg mb-8">Helping healthcare companies grow with insights-driven strategies.<br>Expert in SQL, Python, dbt, Tableau & GA4.</p>
-      <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">Book a Call</a>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Remote Data Analyst for Healthcare Marketing</h1>
+      <p class="text-lg mb-8 text-gray-700">Helping healthcare companies grow with insights-driven strategies.<br>Expert in SQL, Python, dbt, Tableau & GA4.</p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">Book a Call</a>
     </div>
   </section>
-  <section class="py-16">
+
+  <!-- Services Overview -->
+  <section id="services" class="py-16 bg-white" data-aos="fade-up">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
-      <div>
-        <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-        <p>I’m a results-oriented analyst who works remotely with healthcare startups. I bring clarity to complex data.</p>
-        <a href="about.html" class="text-blue-600 mt-2 inline-block">Read more →</a>
+      <div class="p-6 rounded-lg border hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Analytics Strategy</h3>
+        <p>Turn data into business value with precise measurement frameworks and reporting strategies.</p>
       </div>
-      <div>
-        <h2 class="text-2xl font-semibold mb-2">What I Offer</h2>
-        <p>End-to-end analytics—from pipeline setup (SQL, dbt) to dashboarding (GA4, Tableau) with strategic reporting.</p>
-        <a href="services.html" class="text-blue-600 mt-2 inline-block">View services →</a>
+      <div class="p-6 rounded-lg border hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Data Engineering</h3>
+        <p>Build scalable pipelines with SQL, dbt, and cloud-based warehouses like Snowflake or BigQuery.</p>
       </div>
-      <div>
-        <h2 class="text-2xl font-semibold mb-2">My Work</h2>
-        <p>Explore the real-world impact of my work—how I helped clients improve acquisition, retention, and revenue.</p>
-        <a href="projects.html" class="text-blue-600 mt-2 inline-block">See projects →</a>
+      <div class="p-6 rounded-lg border hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Visualizations</h3>
+        <p>Create dashboards and performance reports with Tableau, Looker Studio, and GA4 integrations.</p>
       </div>
     </div>
   </section>
-  <footer class="bg-gray-100 py-6 text-center text-gray-500 text-sm">
-    &copy; 2025 Vivek Jariwala · Remote Data Analyst · Built with ❤️ using GitHub Pages
+
+  <!-- Projects Preview -->
+  <section id="projects" class="py-16 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Project Highlights</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-5 bg-white rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">GA4 Pipeline for Pharma Brand</h3>
+          <p>Automated GA4 events processing to Snowflake using dbt, improving reporting speed by 70%.</p>
+        </div>
+        <div class="p-5 bg-white rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Healthcare Lead Scoring Model</h3>
+          <p>Designed a Python-based ML model to predict high-intent leads with 85% precision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section id="contact" class="py-20 bg-white" data-aos="fade-up">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Let’s Work Together</h2>
+      <p class="mb-8">Tell me about your goals and how I can help with analytics, engineering, or reporting.</p>
+      <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-12 text-center text-sm text-gray-500">
+    © 2025 Vivek Jariwala. All rights reserved.
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+    });
+  </script>
+
 </body>
 </html>
